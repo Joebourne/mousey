@@ -1,21 +1,40 @@
-.circle {
+#circle {
 	position: fixed;
-	left: 50%;
 	top: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	border: 5px solid black;
 }
 
-.inner-circle {
+#inner-circle {
 	position: absolute;
 	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	right: 50%;
+	transform: translate(50%, -50%);
 	width: 30px;
 	height: 30px;
-	background-color: white;
+	background-color: black;
 	border-radius: 50%;
+}
+
+h1 {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+}
+
+.clicked {
+	#circle {
+		background-color: black;
+		opacity: 0.3;
+	}
+
+	#inner-circle {
+		background-color: white;
+	}
 }
